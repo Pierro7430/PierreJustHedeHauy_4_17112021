@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<title>Nous Contacter - La Chouette Agence</title>
+		<meta name="description" content="La Chouette Agence est une agence de web design basée à Lyon qui aide les entreprises locales à devenir attractives et visibles sur Internet pour attirer de nouveaux clients.">
+		
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+		
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		
+		
+		<script src="./js/jquery-2.1.0.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/blocs.js"></script>
+		<script src="./js/jquery.touchSwipe.js" defer></script>
+		<script src="./js/gmaps.js"></script>
+	</head>
+
+
+	<!-- Principal conteneur -->
+	<body class="page-container">
+		
+		<!-- bloc-0 -->
+		<header class="bloc bgc-white l-bloc">
+			<div class="container bloc-sm">
+
+				<nav class="navbar row">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="La chouette agence" height="40" /></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a href="index.html" class="btn-navbar">Accueil</a>
+							</li>
+							<li>
+								<a href="contact.html" class="btn-navbar">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- bloc-0 END -->
+
+
+		<main>
+
+			<!-- bloc-6 -->
+			<div class="bloc bgc-atomic-tangerine bg-repeat d-bloc bloc-bg-texture texture-paper bg-dots-bg">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12 space-side">
+							<h1 class="text-center hero-bloc-text white">
+								Parlons web design !
+							</h1>
+							<p class="text-center mg-lg tight-width-whitespace white">
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-6 END -->
+
+			<!-- bloc-7 -->
+			<div class="bloc bgc-white l-bloc">
+				<div class="container bloc-lg">
+					<div>
+						<div class="flex-column">
+							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+								<div class="text-form">
+									<p>Les champs marqués d'une astérisque (<span class="asterix">&#42</span>) sont obligatoires</p>
+								</div>
+								<div class="form-group">
+									<label for="lastname">
+										Nom <span class="asterix">&#42</span>
+									</label>
+									<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Votre nom" required />
+								</div>
+
+								<div class="form-group">
+									<label for="firstname">
+										Prénom
+									</label>
+									<input id="firstname" name="firstname" type="text" class="form-control" placeholder="Votre prénom" required />
+								</div>
+
+								<div class="form-group">
+									<label for="email">
+										Adresse email <span class="asterix">&#42</span>
+									</label>
+									<input id="email" name="email" class="form-control" type="email" placeholder="Votre adresse mail" required />
+								</div>
+
+								<div class="form-group">
+									<label for="canal-connaissance">
+										Comment nous avez-vous connu ? <span class="asterix">&#42</span>
+									</label>
+									<select id="canal-connaissance" name="canal-connaissance" class="form-control" required  />
+										<option value="" disabled selected>Sélectionnez votre choix</option>
+										<option value="">Par les réseaux sociaux</option>
+										<option value="">Via la publicité</option>
+										<option value="">En faisant une recherche Google</option>
+										<option value="">Grâce au bouche à oreille</option>
+										<option value="">Car j'ai déjà travaillé avec vous</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="message">
+										Brief de votre projet (Ajoutez autant de détails que nécessaire) <span class="asterix">&#42</span>
+									</label>
+									<textarea id="message" name="message" class="form-control" rows="10" cols="50" required></textarea>
+								</div> 
+
+								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine send-button" type="submit">
+									Envoyer
+								</button>
+
+							</form>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<!-- bloc-7 END -->
+
+			<!-- ScrollToTop Button -->
+			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<!-- ScrollToTop Button END-->
+
+		</main>
+		
+
+		<!-- Footer - bloc-8 -->
+		<footer class="bloc bgc-atomic-tangerine d-bloc">
+			<div class="container space">
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="text-center white adress">
+							<span class="agency-name">La chouette agence</span><br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+						</p>
+						<div class="row row-no-gutters social space flex">
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="#" title="Aller sur notre page Twitter"><span class="fa fa-twitter icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="#" title="Aller sur notre page FaceBook"><span class="fa fa-facebook icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="#" title="Aller sur notre page Dribble"><span class="fa fa-dribbble icon-md"></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="text-center">
+									<a class="social" href="#" title="Aller sur notre page Instagram"><span class="fa fa-instagram icon-md"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer - bloc-8 END -->
+
+	</body>	
+	<!-- Principal conteneur END -->
+
+</html>
