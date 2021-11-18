@@ -14,7 +14,11 @@
 		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 		
 		
-		
+		<script src="./js/jquery-2.1.0.js" defer></script>
+		<script src="./js/bootstrap.js" defer></script>
+		<script src="./js/blocs.js" defer></script>
+		<script src="./js/jquery.touchSwipe.js" defer></script>
+		<script src="./js/gmaps.js" defer></script>
 	</head>
 
 	<body class="page-container">
@@ -24,7 +28,7 @@
 
 			<div class="container bloc-sm">
 
-				<nav class="navbar row">
+				<div class="navbar row">
 
 					<div class="navbar-header">
 						<a class="navbar-brand" href="index.html"><img src="./img/la-chouette-agence.png" alt="La chouette agence" /></a>
@@ -33,7 +37,7 @@
 						</button>
 					</div>
 
-					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+					<nav class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
 								<a href="index.html" class="btn-navbar">Accueil</a>
@@ -42,9 +46,9 @@
 								<a href="contact.html" class="btn-navbar">Contact</a>
 							</li>
 						</ul>
-					</div>
+					</nav>
 
-				</nav>
+				</div>
 
 			</div>
 
@@ -136,6 +140,9 @@
 							<p class="text-center white fg-text">
 								Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter.
 							</p>
+							<div class="text-center">
+								<a href="contact.html" class="btn btn-lg btn-rd cta-hero btn-atomic-tangerine">Contact</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -155,7 +162,7 @@
 					</div>
 					<div class="row tight-width-whitespace">
 						<div class="col-sm-6 space flex-column">
-							<img src="./img/1.jpg" class="img-responsive portfolio-thumb" alt="Pile de magazines"/>
+							<a href="#" data-lightbox="./img/1-xl.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb"><img src="./img/1.jpg" class="img-responsive portfolio-thumb" alt="Pile de magazines"/></a>
 							<h3 class="mg-md text-center">
 								Refonte d'un site web pour un journal local
 							</h3>
@@ -164,7 +171,7 @@
 							</p>
 						</div>
 						<div class="col-sm-6 space flex-column">
-							<img src="./img/2.jpg" class="img-responsive portfolio-thumb" alt="Femme prenant une photo"/>
+							<a href="#" data-lightbox="./img/2-xl.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb"><img src="./img/2.jpg" class="img-responsive portfolio-thumb" alt="Femme prenant une photo"/></a>
 							<h3 class="mg-md text-center">
 								Création d'un site web pour photographes
 							</h3>
@@ -175,7 +182,7 @@
 					</div>
 					<div class="row tight-width-whitespace">
 						<div class="col-sm-6 space flex-column">
-							<img src="./img/3.jpg" class="img-responsive portfolio-thumb" alt="Appareils photos et informatiques pour voyageur"/>
+							<a href="#" data-lightbox="./img/3-xl.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="./img/3.jpg" class="img-responsive portfolio-thumb" alt="Appareils photos et informatiques pour voyageur"/></a>
 							<h3 class="mg-md text-center">
 								Création d'un site internet pour un voyageur
 							</h3>
@@ -184,7 +191,7 @@
 							</p>
 						</div>
 						<div class="col-sm-6 space flex-column">
-							<img src="./img/4.jpg" class="img-responsive portfolio-thumb" alt="Enveloppes et faire-part pour mariage"/>
+							<a href="#" data-lightbox="./img/4-xl.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb"><img src="./img/4.jpg" class="img-responsive portfolio-thumb" alt="Enveloppes et faire-part pour mariage"/></a>
 							<h3 class="mg-md text-center">
 								Conception d'un site pour une agence de mariage
 							</h3>
@@ -248,6 +255,13 @@
 								</div>
 							</div>
 						</div>
+						<nav class="footer-links">
+							<ul class="footer-ul">
+								<li><a href="#"  title="Consulter nos partenaires">Nos partenaires</a></li>
+								<li><a href="#"  title="Accéder à notre annuaire">Annuaires</a></li>
+								<li><a href="#"  title="Lire nos conditions générales d'utilisation">Conditions générales</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
