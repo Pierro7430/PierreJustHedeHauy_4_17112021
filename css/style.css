@@ -65,7 +65,7 @@ a:hover {
 }
 
 .texture-paper {
-    background: url("../img/texture-paper.png");
+    background: url("../img/texture-paper.webp");
 }
 
 .b-parallax {
@@ -428,7 +428,7 @@ nav .caret {
 }
 
 .mg-md {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -548,6 +548,20 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
+a[data-lightbox]::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
 a[data-lightbox]:hover img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
@@ -556,10 +570,43 @@ a[data-lightbox]:hover img {
 
 a[data-lightbox]:focus-visible img {
     opacity: 0.6;
-    border: 3px solid #000;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
+
+a[data-lightbox]:focus-visible::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+a[data-lightbox]:focus-visible::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    border: 4px solid #B45B31;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
 
 #lightbox-modal {
     display: flex;
@@ -750,9 +797,6 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
 
 .portfolio-row {
     margin-bottom: 44px;
@@ -822,25 +866,25 @@ h4 {
 }
 
 .texture-paper::before {
-    background: url("../img/texture-paper.png");
+    background: url("../img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
 .bg-dots-bg {
-    background-image: url("../img/dots-bg.png");
+    background-image: url("../img/dots-bg.webp");
     background-repeat: repeat;
     z-index: 0;
 }
 
 .bg-banniere {
-    background-image: url("../img/la-chouette-agence-banniere.jpg");
+    background-image: url("../img/la-chouette-agence-banniere.webp");
     background-size: cover;                     
     background-repeat: no-repeat;
     z-index: 0;
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.jpg");
+    background-image: url("../img/image-de-presentation.webp");
     background-size: cover;                     
     background-repeat: no-repeat;
     z-index: 0;
