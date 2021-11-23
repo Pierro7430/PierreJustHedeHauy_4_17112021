@@ -13,11 +13,11 @@
 		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 		
-		<script src="./js/jquery-2.1.0.js" async></script>
-		<script src="./js/bootstrap.js" async></script>
-		<script src="./js/blocs.js" async></script>
-		<script src="./js/jquery.touchSwipe.js" async></script>
-		<script src="./js/gmaps.js" async></script>
+		<script src="./js/jquery-2.1.0.min.js" defer></script>
+		<script src="./js/bootstrap.min.js" defer></script>
+		<script src="./js/blocs.min.js" defer></script>
+		<script src="./js/jquery.touchSwipe.min.js" defer></script>
+		<!-- <script src="./js/gmaps.js" ></script> -->
 	</head>
 
 
@@ -32,7 +32,7 @@
 				<div class="navbar row">
 
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="./img/la-chouette-agence.webp" alt="La chouette agence" /></a>
+						<a class="navbar-brand" href="index.html"><img src="./img/la-chouette-agence.webp" width="214" height="40" alt="La chouette agence" /></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 						</button>
@@ -90,7 +90,7 @@
 									<label for="lastname">
 										Nom <span class="asterix">&#42</span>
 									</label>
-									<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Votre nom" aria-required="true"/>
+									<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Votre nom" aria-required="true" required/>
 								</div>
 
 								<div class="form-group">
@@ -102,16 +102,16 @@
 
 								<div class="form-group">
 									<label for="email">
-										Adresse email <span class="asterix">&#42</span>
+										Adresse email <span class="asterix" aria-label="astérisque">&#42</span>
 									</label>
-									<input id="email" name="email" class="form-control" type="email" placeholder="Votre adresse mail" aria-required="true" aria-invalid="true"/>
+									<input id="email" name="email" class="form-control" type="email" placeholder="Votre adresse mail" aria-required="true" aria-invalid="true" required/>
 								</div>
 
 								<div class="form-group">
 									<label for="how">
-										Comment nous avez-vous connu ? <span class="asterix">&#42</span>
+										Comment nous avez-vous connu ? <span class="asterix" aria-label="astérisque">&#42</span>
 									</label>
-									<select id="how" name="how" class="form-control" aria-required="true"/>
+									<select id="how" name="how" class="form-control" aria-required="true" required/>
 										<option value="" disabled selected>Sélectionnez votre choix</option>
 										<option value="">Par les réseaux sociaux</option>
 										<option value="">Via la publicité</option>
@@ -123,9 +123,9 @@
 
 								<div class="form-group">
 									<label for="message">
-										Brief de votre projet (Ajoutez autant de détails que nécessaire) <span class="asterix">&#42</span>
+										Brief de votre projet (Ajoutez autant de détails que nécessaire) <span class="asterix" aria-label="astérisque">&#42</span>
 									</label>
-									<textarea id="message" name="message" class="form-control" rows="10" cols="50" aria-required="true"></textarea>
+									<textarea id="message" name="message" class="form-control" rows="10" cols="50" aria-required="true" required></textarea>
 								</div> 
 
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine send-button" type="submit">
