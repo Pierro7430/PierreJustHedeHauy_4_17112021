@@ -8,10 +8,7 @@
 		
 		<link rel="shortcut icon" type="image/png" href="./img/favicon.webp">
 
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-		<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+		<link rel="stylesheet" type="text/css" href="./css/main.min.css">
 		
 		<script src="./js/jquery-2.1.0.min.js" defer></script>
 		<script src="./js/bootstrap.min.js" defer></script>
@@ -82,15 +79,15 @@
 				<div class="container bloc-lg">
 					<div>
 						<div class="flex-column">
-							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<form id="form_1">
 								<div class="text-form">
-									<p>Les champs marqués d'une astérisque (<span class="asterix">&#42</span>) sont obligatoires</p>
+									<p>Les champs marqués d'une astérisque (<span class="asterix">*</span>) sont obligatoires</p>
 								</div>
 								<div class="form-group">
 									<label for="lastname">
-										Nom <span class="asterix">&#42</span>
+										Nom <span class="asterix">*</span>
 									</label>
-									<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Votre nom" aria-required="true" required/>
+									<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Votre nom" aria-required="true" required />
 								</div>
 
 								<div class="form-group">
@@ -102,17 +99,17 @@
 
 								<div class="form-group">
 									<label for="email">
-										Adresse email <span class="asterix" aria-label="astérisque">&#42</span>
+										Adresse email <span class="asterix">*</span>
 									</label>
-									<input id="email" name="email" class="form-control" type="email" placeholder="Votre adresse mail" aria-required="true" aria-invalid="true" required/>
+									<input id="email" name="email" class="form-control" type="email" placeholder="Votre adresse mail" aria-required="true" aria-invalid="true" required />
 								</div>
 
 								<div class="form-group">
 									<label for="how">
-										Comment nous avez-vous connu ? <span class="asterix" aria-label="astérisque">&#42</span>
+										Comment nous avez-vous connu ? <span class="asterix">*</span>
 									</label>
-									<select id="how" name="how" class="form-control" aria-required="true" required/>
-										<option value="" disabled selected>Sélectionnez votre choix</option>
+									<select id="how" name="how" class="form-control" aria-required="true" required >
+										<option value="" disabled selected >Sélectionnez votre choix</option>
 										<option value="">Par les réseaux sociaux</option>
 										<option value="">Via la publicité</option>
 										<option value="">En faisant une recherche Google</option>
@@ -123,9 +120,9 @@
 
 								<div class="form-group">
 									<label for="message">
-										Brief de votre projet (Ajoutez autant de détails que nécessaire) <span class="asterix" aria-label="astérisque">&#42</span>
+										Brief de votre projet (Ajoutez autant de détails que nécessaire) <span class="asterix">*</span>
 									</label>
-									<textarea id="message" name="message" class="form-control" rows="10" cols="50" aria-required="true" required></textarea>
+									<textarea id="message" name="message" class="form-control" rows="10" cols="50" aria-required="true" required ></textarea>
 								</div> 
 
 								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine send-button" type="submit">
