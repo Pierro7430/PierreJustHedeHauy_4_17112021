@@ -432,6 +432,10 @@ textarea.form-control {
     display: none
 }
 
+.collapse.in {
+    display: block
+}
+
 .nav {
     padding-left: 0;
     margin-bottom: 0;
@@ -777,5 +781,6 @@ button.close {
         width: 900px
     }
 }
+
 
 
